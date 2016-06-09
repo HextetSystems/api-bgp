@@ -1,0 +1,24 @@
+<h2>Usage</h2>
+
+<dl>
+  <dt>/</dt>
+  <dd>returns HTML usage documentation</dd>
+  
+  <dt><a href="/api/v1/bgp/">/api/v1/bgp/</a></dt>
+  <dd>returns $REMOTE_ADDR prefix and source asn in format "prefix $prefix advertised by $asn ($asname)"</dd>
+
+  <dt>/api/v1/bgp/&lt;IP&gt;</dt>
+  <dd>returns $IP prefix and source asn in format "prefix $prefix advertised by $asn ($asname)"</dd>
+
+  <dt><a href="/api/v1/bgp/asn/">/api/v1/bgp/asn/</a></dt>
+  <dd>returns $REMOTE_ADDR source asn in format "$asn"</dd>
+
+  <dt>/api/v1/bgp/asn/&lt;IP&gt;</dt>
+  <dd>returns $IP source asn in format "$asn"</dd>
+
+  <dt><a href="/api/v1/bgp/prefix/">/api/v1/bgp/prefix/</a></dt>
+  <dd>returns $REMOTE_ADDR prefix in format "$prefix"</dd>
+
+  <dt>/api/v1/bgp/prefix/&lt;IP&gt;</dt>
+  <dd>returns $IP prefix in format "$prefix"</dd>
+</dl>
