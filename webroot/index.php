@@ -9,7 +9,11 @@
 
 require("../common.inc.php");
 
-$ip = $_GET['ip'] ? $_GET['ip'] : $_SERVER['REMOTE_ADDR'];
+if(isset($_POST['text'])
+  $ip = $_POST['text'];
+else
+  $ip = $_GET['ip'] ? $_GET['ip'] : $_SERVER['REMOTE_ADDR'];
+
 $action = $_GET['l'] ? $_GET['l'] : 'info';
 
 if(validV4($ip)) {
