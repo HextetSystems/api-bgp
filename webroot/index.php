@@ -9,7 +9,7 @@
 
 require("../common.inc.php");
 
-if(isset($_POST['text'])
+if(isset($_POST['text']))
   $ip = $_POST['text'];
 else
   $ip = $_GET['ip'] ? $_GET['ip'] : $_SERVER['REMOTE_ADDR'];
